@@ -44,3 +44,11 @@ const car ={
 console.log(car.model)
 console.log(car.options[0])
 console.log(car.description())
+
+// On peut également accéder a une propriete d'un objet grace aux crochets et a sa clé en guise de valeur
+console.log(car['model'])
+
+// Pour pouvoir boucler sur un objet il faut utiliser for(...in...){} car les objets sont des énumérables
+for(let key in car ){
+    console.log(car[key]);
+}
